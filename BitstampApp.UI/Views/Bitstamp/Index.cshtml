@@ -1,0 +1,82 @@
+﻿<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card card-default">
+
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5>Hacim hesapla</h5>
+                            @{
+                                Html.BeginForm("HacimHesapla", "Bitstamp", FormMethod.Post, new { name = "hacimform", id = "hacimform" });
+                                <label>Sembol</label>
+                                <select class="form-select" aria-label="Default" required id="symbolselect" name="symbol">
+                                    <option value="btcusd">BTC/USD</option>
+                                    <option value="ltcusd">LTC/USD</option>
+                                    <option value="ethusd">ETH/USD</option>
+                                    <option value="usdtusd">USD/TUSD</option>
+                                </select>
+                                <div class="row">
+
+                                    <br />
+                                    <!-- /.col -->
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn btn-primary btn-block" style="width:fit-content !important;" onclick="wait()" id="btnsubmit">Send</button>
+                                        <p class="text-danger" style="display:none;" id="waitmessage">
+                                            Hesaplama yapılırken lütfen bekleyin ! Yaklaşık <a id="timer" class="font-weight-bold"></a> saniye kaldı<div class="spinner-border text-primary" role="status" style="display:none;" id="spinner">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </p>
+
+                                        <p class="text-success font-weight-bold" id="hacimtext">@TempData["Hacim"]</p>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                Html.EndForm();
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+@section Scripts{
+
+<script>
+    var seconds=60;
+    var timer;
+    function myFunction() {
+      if(seconds < 60) {
+        document.getElementById("timer").innerHTML = seconds;
+      }
+         if (seconds >0 ) {
+             seconds--;
+         }
+    }
+
+
+</script>
+
+<script>
+      function wait(){
+          document.forms['hacimform'].submit();
+          document.getElementById("hacimtext").innerHTML="";
+          document.getElementById("symbolselect").disabled = true;
+          document.getElementById("btnsubmit").disabled = true;
+          document.getElementById("waitmessage").style.display="block";
+           document.getElementById("spinner").style.display="block";
+
+             if(!timer) {
+      timer = window.setInterval(function() {
+        myFunction();
+      }, 1000);
+    }
+      }
+</script>
+}
+
+

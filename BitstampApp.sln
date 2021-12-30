@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitstampApp.UI", "BitstampApp.UI\BitstampApp.UI.csproj", "{FDDCC780-15E8-4458-BBED-E1FFBBBF6800}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitstampApp.Core", "BitstampApp.Core\BitstampApp.Core.csproj", "{A788394F-38DF-4885-9F64-BD21BA0F3CC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitstampApp.Data", "BitstampApp.Data\BitstampApp.Data.csproj", "{304505F7-9059-4EF3-8288-05508397EFAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitstampApp.Services", "BitstampApp.Services\BitstampApp.Services.csproj", "{17FB65D1-9D18-42A6-9BB5-8FD6BBE92418}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitstampApp.Api", "BitstampApp.Api\BitstampApp.Api.csproj", "{B18630B5-1EC1-4204-98A9-7C3B01F8DC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitstampApp.Websocket", "BitstampApp.Websocket\BitstampApp.Websocket.csproj", "{8F90071E-BC20-4639-9E79-3E34C95E2D92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDDCC780-15E8-4458-BBED-E1FFBBBF6800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDCC780-15E8-4458-BBED-E1FFBBBF6800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDCC780-15E8-4458-BBED-E1FFBBBF6800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDCC780-15E8-4458-BBED-E1FFBBBF6800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A788394F-38DF-4885-9F64-BD21BA0F3CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A788394F-38DF-4885-9F64-BD21BA0F3CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A788394F-38DF-4885-9F64-BD21BA0F3CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A788394F-38DF-4885-9F64-BD21BA0F3CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304505F7-9059-4EF3-8288-05508397EFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304505F7-9059-4EF3-8288-05508397EFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304505F7-9059-4EF3-8288-05508397EFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304505F7-9059-4EF3-8288-05508397EFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FB65D1-9D18-42A6-9BB5-8FD6BBE92418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FB65D1-9D18-42A6-9BB5-8FD6BBE92418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FB65D1-9D18-42A6-9BB5-8FD6BBE92418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FB65D1-9D18-42A6-9BB5-8FD6BBE92418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18630B5-1EC1-4204-98A9-7C3B01F8DC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18630B5-1EC1-4204-98A9-7C3B01F8DC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18630B5-1EC1-4204-98A9-7C3B01F8DC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18630B5-1EC1-4204-98A9-7C3B01F8DC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F90071E-BC20-4639-9E79-3E34C95E2D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F90071E-BC20-4639-9E79-3E34C95E2D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F90071E-BC20-4639-9E79-3E34C95E2D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F90071E-BC20-4639-9E79-3E34C95E2D92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B6FB264-600A-4D2B-99C5-C4C45F34725F}
+	EndGlobalSection
+EndGlobal
